@@ -1,0 +1,472 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee+Outline&family=Montserrat:wght@400;700&display=swap');
+
+body {
+    background-color: #A03333;
+    background-image: url(../images/rectangle-background-1.png), url(../images/rectangle-background-2.png), url(../images/rectangle-background-3.png);
+    background-repeat: no-repeat;
+    height: 756px;
+    background-size: contain;
+    background-position: right;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1.5rem 8rem;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    text-transform: uppercase;
+    font-size: 2.4rem;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.menu .btn {
+    background-image: url(../images/rectangle-1.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 0.8rem 3rem;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.introduction {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 8rem;
+}
+
+.introduction .title {
+    font-family: 'Bungee Outline', cursive;
+    color: #fff;
+    font-size: 8.2rem;
+    font-weight: 400;
+    line-height: 12rem;
+}
+
+.introduction .title span {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 12rem;
+}
+
+.introduction .text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8rem;
+    color: #fff;
+    margin-bottom: 3.6rem;
+}
+
+.introduction .start-btn {
+    background-image: url(../images/rectangle-2.svg);
+    width: 187px;
+    display: block;
+    background-repeat: no-repeat;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 3.2rem;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0.8rem;
+}
+
+.introduction .start-btn::after {
+    content: url(../images/Arrow.svg);
+    margin-left: 1.5rem;
+}
+
+.introduction .image-area {
+    display: flex;
+    margin-right: 12rem;
+}
+
+.pass-through-bar {
+    background-color: #222;
+    height: 5.6rem;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-container {
+    display: inline-block;
+    white-space: nowrap;
+    text-align: center;
+    animation: moveTheText 10s infinite linear;
+}
+
+.text-container p {
+    margin-right: 13.5rem;
+    display: inline-block;
+    font-size: 3.2rem;
+    color: #fff;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.pass-through-bar p:not(:last-child)::after {
+    content: url(../images/gym-icon.png);
+    position: absolute;
+    margin-left: 4.5rem;
+    bottom: -1rem;
+}
+
+@keyframes moveTheText {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.services-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: #A03333;
+}
+
+.services-area h1 {
+    font-family: 'Bungee Outline', cursive;
+    font-weight: 400;
+    font-size: 6.2rem;
+    color: #fff;
+    padding-top: 18rem;
+    padding-bottom: 11.6rem;
+}
+
+.services-area h1 span {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 8.2rem;
+}
+
+.services-area .services {
+    display: flex;
+    padding-bottom: 15rem;
+}
+
+.service {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 320px;
+    height: 346px;
+    padding: 2.4rem;
+}
+
+.service:hover {
+    background-color: #222;
+    transition: 0.3s ease-in-out;
+}
+
+.service img {
+    width: 7.7rem;
+    padding-bottom: 1rem;
+}
+
+.service .title-service {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2.8rem;
+    padding-bottom: 1.1rem;
+    color: #fff;
+}
+
+.service .about {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8rem;
+    padding-bottom: 2.7rem;
+    color: #fff;
+}
+
+.service .btn-service {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.6rem;
+    background-image: url(../images/rectangle-2.svg);
+    background-repeat: no-repeat;
+    display: block;
+    width: 187px;
+    height: 54px;
+}
+
+.btn-service.one {
+    padding: 0.8rem 1.5rem;
+}
+
+.btn-service.one::after {
+    position: absolute;
+    content: url(../images/Arrow.svg);
+    left: 19rem;
+    bottom: -85rem;
+}
+
+.btn-service.two {
+    padding: 0.8rem 8.7rem 0.8rem 1.5rem;
+}
+
+.btn-service.two::after {
+    position: absolute;
+    content: url(../images/Arrow.svg);
+    left: 50rem;
+    bottom: -85rem;
+}
+
+.btn-service.three {
+    padding: 1.6rem 7.7rem 1.6rem 1rem;
+    font-size: 1.8rem;
+}
+
+.btn-service.three::after {
+    position: absolute;
+    content: url(../images/Arrow.svg);
+    left: 82rem;
+}
+
+.btn-service.four {
+    padding: 0.8rem 10.2rem 0.8rem 1.5rem;
+}
+
+.btn-service.four::after {
+    position: absolute;
+    content: url(../images/Arrow.svg);
+    left: 115rem;
+    bottom: -85rem;
+}
+
+.service .btn-service:hover {
+    transition: 0.3s ease-in-out;
+    background-image: url(../images/rectangle.svg);
+}
+
+.plans-area {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 8rem;
+    padding-bottom: 10rem;
+    background-color: #222;
+}
+
+.plans-area h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 8.2rem;
+    color: #fff;
+    font-weight: 400;
+    text-align: center;
+    padding-bottom: 10rem;
+}
+
+.plans-area .plans {
+    display: flex;
+    gap: 4.1rem;
+}
+
+.plans-area .plan {
+    width: 39.9rem;
+    background-color: #000;
+    height: 32.2rem;
+}
+
+.plans-area .plan.user-recommendation {
+    background: #FF0202;
+    background-color: #FF0202;
+}
+
+.plan .plan-time {
+    font-family: 'Bebas Neue', sans-serif;
+
+    font-size: 4.2rem;
+    color: #fff;
+    padding: 1rem 2rem;
+}
+
+.plan .price {
+    padding: 1.5rem 2.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #B4B4B4;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.4rem;
+    color: #787878;
+}
+
+.plan .price span {
+    font-weight: 700;
+    color: #fff;
+}
+
+.plan .price .btn {
+    text-transform: uppercase;
+    color: #787878;
+    border-radius: 5rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+    border: 1px solid #787878;
+    padding: 1.4rem 0.7rem;
+    background: rgba(217, 217, 217, 0.00);
+    transition: 0.3s;
+}
+
+.plan .price .btn:hover {
+    color: #FF0202;
+    border-color: #FF0202;
+}
+
+.user-recommendation-label {
+    position: absolute;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    background-color: #FF0202;
+    height: 4rem;
+    font-weight: 700;
+    font-size: 1.8rem;
+    display: flex;
+    width: 39.9rem;
+    left: 47.6rem;
+    bottom: -131.8rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.more-about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-image: url(../images/rectangle-background-4.png), url(../images/rectangle-background-5.png), url(../images/rectangle-background-6.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    gap: 3.2rem;
+}
+
+.more-about .image {
+    padding-top: 7.6rem;
+    padding-left: 8rem;
+    height: 658px;
+}
+
+.more-about .text .title {
+    font-size: 6.2rem;
+    font-family: 'Bungee Outline', cursive;
+    font-weight: 400;
+    color: #fff;
+}
+
+.more-about .text .title span {
+    font-size: 8.2rem;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.more-about .text .description {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8rem;
+    color: #fff;
+}
+
+.more-about .gym-numbers {
+    display: flex;
+    justify-content: left;
+    padding-top: 7rem;
+    gap: 5rem;
+}
+
+.more-about .gym-numbers .numbers {
+    font-size: 6.2rem;
+    font-family: 'Bebas Neue', sans-serif;
+    color: #fff;
+}
+
+.more-about .gym-numbers .about {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8rem;
+    color: #fff;
+}
+
+.contact-area {
+    width: 100%;
+    padding-left: 8rem;
+    height: 467px;
+    background-color: #1E1E1E;
+}
+
+.contact-area .text {
+    padding-top: 7rem;
+}
+
+.contact-area .text p:first-child {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 8.2rem;
+    color: #fff;
+}
+
+.contact-area .text p:last-child {
+    font-size: 2.4rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+}
+
+.contact-area .form-area {
+    display: flex;
+    gap: 3rem;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+}
+
+.contact-area .form-area input {
+    border: none;
+    background-color: transparent;
+    background-image: url(../images/rectangle-20.png);
+    width: 234px;
+    height: 42px;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    padding: 1rem 1.8rem;
+}
+
+.contact-area .form-area input::placeholder {
+    font-size: 18px;
+    color: #fff;
+}
+
+.contact-area .contact-btn {
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    background-image: url(../images/rectangle-22.png);
+    width: 234px;
+    height: 42px;
+}
+
+.contact-area img {
+    position: absolute;
+    left: 88rem;
+    bottom: -286.6rem;
+}
+
+footer {
+    height: 150px;
+}
