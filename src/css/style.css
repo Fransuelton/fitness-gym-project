@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee+Outline&family=Montserrat:wght@400;700&display=swap');
 
+/* General styles */
+
 body {
     background-color: #A03333;
     background-image: url(../images/rectangle-background-1.png), url(../images/rectangle-background-2.png), url(../images/rectangle-background-3.png);
@@ -8,6 +10,8 @@ body {
     background-size: contain;
     background-position: right;
 }
+
+/* Header styles */
 
 .header {
     display: flex;
@@ -26,6 +30,38 @@ body {
     font-family: 'Bebas Neue', sans-serif;
 }
 
+.menu li {
+    position: relative;
+}
+
+.menu li::before {
+    transform: scaleX(0);
+    transform-origin: bottom right;
+}
+
+.menu li:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.menu li::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    inset: 0 0 0 0;
+    background: #000000;
+    z-index: -1;
+    transition: transform .3s ease
+}
+
+.menu li:last-child::before {
+    background: transparent;
+}
+
 .menu .btn {
     background-image: url(../images/rectangle-1.svg);
     background-repeat: no-repeat;
@@ -34,6 +70,12 @@ body {
     text-align: center;
     padding: 0.8rem 3rem;
 }
+
+.menu .btn:hover {
+    opacity: 90%;
+}
+
+/* Main styles */
 
 .main {
     display: flex;
@@ -81,6 +123,10 @@ body {
     padding: 0.8rem;
 }
 
+.introduction .start-btn:hover {
+    opacity: 90%;
+}
+
 .introduction .start-btn::after {
     content: url(../images/Arrow.svg);
     margin-left: 1.5rem;
@@ -90,6 +136,8 @@ body {
     display: flex;
     margin-right: 12rem;
 }
+
+/*  Message bar */
 
 .pass-through-bar {
     background-color: #222;
@@ -133,6 +181,8 @@ body {
         transform: translateX(-100%);
     }
 }
+
+/* Services Section */
 
 .services-area {
     display: flex;
@@ -254,6 +304,8 @@ body {
     background-image: url(../images/rectangle.svg);
 }
 
+/* Plans section */
+
 .plans-area {
     width: 100%;
     display: flex;
@@ -341,11 +393,13 @@ body {
     font-size: 1.8rem;
     display: flex;
     width: 39.9rem;
-    left: 47.6rem;
+    left: 47.8rem;
     bottom: -131.8rem;
     justify-content: center;
     align-items: center;
 }
+
+/* About Section */
 
 .more-about {
     display: flex;
@@ -400,6 +454,8 @@ body {
     font-size: 1.8rem;
     color: #fff;
 }
+
+/* Contact Section */
 
 .contact-area {
     width: 100%;
@@ -461,11 +517,17 @@ body {
     height: 42px;
 }
 
+.contact-area .contact-btn:hover {
+    opacity: 90%;
+}
+
 .contact-area img {
     position: absolute;
     left: 88rem;
     bottom: -286.6rem;
 }
+
+/* footer section */
 
 footer {
     height: 150px;
