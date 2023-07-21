@@ -1,0 +1,30 @@
+@media (min-width: 1920px) {
+    .btn-service.one::after {
+        left: 48rem;
+        bottom: -46.6rem;
+    }
+
+    .btn-service.two::after {
+        left: 80rem;
+        bottom: -46.6rem;
+    }
+
+    .btn-service.three::after {
+        left: 112rem;
+    }
+
+    .btn-service.four::after {
+        left: 143rem;
+        bottom: -46.6rem;
+    }
+
+    .user-recommendation-label {
+        left: 75.5rem;
+        bottom: -93.4rem;
+    }
+
+    .contact-area img {
+        left: 100rem;
+        bottom: -248rem;
+    }
+}
