@@ -250,31 +250,17 @@ body {
     font-size: 1.6rem;
     background-image: url(../images/rectangle-2.svg);
     background-repeat: no-repeat;
-    display: block;
     width: 187px;
     height: 54px;
+    position: relative;
 }
 
 .btn-service.one {
     padding: 0.8rem 1.5rem;
 }
 
-.btn-service.one::after {
-    position: absolute;
-    content: url(../images/Arrow.svg);
-    left: 19rem;
-    bottom: -85rem;
-}
-
 .btn-service.two {
     padding: 0.8rem 8.7rem 0.8rem 1.5rem;
-}
-
-.btn-service.two::after {
-    position: absolute;
-    content: url(../images/Arrow.svg);
-    left: 50rem;
-    bottom: -85rem;
 }
 
 .btn-service.three {
@@ -282,21 +268,15 @@ body {
     font-size: 1.8rem;
 }
 
-.btn-service.three::after {
-    position: absolute;
-    content: url(../images/Arrow.svg);
-    left: 82rem;
-}
-
 .btn-service.four {
     padding: 0.8rem 10.2rem 0.8rem 1.5rem;
 }
 
-.btn-service.four::after {
+.btn-service::after {
     position: absolute;
     content: url(../images/Arrow.svg);
-    left: 115rem;
-    bottom: -85rem;
+    left: 12rem;
+    bottom: 1rem;
 }
 
 .service .btn-service:hover {
@@ -335,10 +315,10 @@ body {
     width: 39.9rem;
     background-color: #000;
     height: 32.2rem;
+    position: relative;
 }
 
 .plans-area .plan.user-recommendation {
-    background: #FF0202;
     background-color: #FF0202;
 }
 
@@ -385,6 +365,8 @@ body {
 
 .user-recommendation-label {
     position: absolute;
+    width: 100%;
+    top: -4rem;
     font-family: 'Montserrat', sans-serif;
     color: #fff;
     background-color: #FF0202;
@@ -392,9 +374,6 @@ body {
     font-weight: 700;
     font-size: 1.8rem;
     display: flex;
-    width: 39.9rem;
-    left: 47.8rem;
-    bottom: -131.8rem;
     justify-content: center;
     align-items: center;
 }
@@ -462,6 +441,7 @@ body {
     padding-left: 8rem;
     height: 467px;
     background-color: #1E1E1E;
+    position: relative;
 }
 
 .contact-area .text {
@@ -523,8 +503,8 @@ body {
 
 .contact-area img {
     position: absolute;
-    left: 88rem;
-    bottom: -286.6rem;
+    left: 80rem;
+    top: -15rem;
 }
 
 /* footer section */
