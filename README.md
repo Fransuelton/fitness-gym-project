@@ -6,10 +6,6 @@
 
 Este projeto foi um desafio proposto pelo Futuro Dev - John, lá no Instagram dele, para ser entregue em alguns dias. Resolvi fazer por estudo e para colocar em prática meus conhecimentos. Não utilizei JavaScript, pois não achei tão necessário, então acabei usando somente HTML e CSS.
 
-## 🎯 Desafio
-
-Um dos desafios para mim foi a responsividade, pois ainda estou treinando esse conceito. Outra coisa que fiz meio que na "gambiarra" foram os detalhes atrás de duas seções da página. Acredito que poderia ter utilizado CSS para criar esses detalhes, mas optei por usar imagens PNG para alcançar o resultado.
-
 ## 📚 Guia de Utilização:
 
 1° Clone o repositório
