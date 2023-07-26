@@ -1,0 +1,105 @@
+@media (max-width: 576px) {
+    body {
+        background-image: none;
+    }
+
+    .introduction {
+        width: 34rem;
+        text-align: center;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .introduction .title {
+        line-height: 8rem;
+    }
+
+    .introduction .text {
+        font-size: 1.8rem;
+    }
+
+    .services-area h1 {
+        text-align: center;
+        line-height: 8rem;
+    }
+    
+    .services-area .services {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 15rem;
+    }
+
+    .plans-area .plans {
+        flex-direction: column;
+        gap: 6rem;
+    }
+
+    .more-about {
+        flex-direction: column;
+        text-align: center;
+        background-image: none;
+    }
+
+    .more-about .image {
+        display: none;
+    }
+
+    .more-about .text .title {
+        font-size: 5rem;
+    }
+
+    .more-about .text .title span {
+        font-size: 6rem;
+    }
+
+    .more-about .gym-numbers {
+        padding: 7rem 1rem;
+        gap: 1rem;
+    }
+    
+    .more-about .gym-numbers .numbers {
+        font-size: 4rem;
+    }
+
+    .more-about .text .description {
+        margin: 0 1rem;
+    }
+
+    .more-about .gym-numbers .about {
+        font-size: 1.6rem;
+    }
+
+    .contact-area {
+        padding: 0;
+        padding-left: 4rem;
+    }
+
+    .contact-area .text {
+        padding-top: 4rem;
+    }
+
+    .contact-area .form-area {
+        width: 30rem;
+    }
+    .contact-area .form-area input {
+        width: 150px;
+    }
+
+    .contact-area img {
+        display: none;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+    
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+    
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+    
+}
