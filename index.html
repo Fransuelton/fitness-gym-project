@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./src/css/reset.css">
     <link rel="stylesheet" href="./src/css/variables.css">
     <link rel="stylesheet" href="./src/css/scrollbar.css">
+    <link rel="stylesheet" href="./src/css/menu.css">
     <link rel="stylesheet" href="./src/css/style.css">
     <link rel="stylesheet" href="./src/css/responsive.css">
     <link rel="shortcut icon" href="./src/images/favicon.ico" type="image/x-icon">
@@ -15,19 +16,30 @@
 
 <body>
     <header class="header">
-        <a href="#" class="logo">
-            <img src="./src/images/logo.png" alt="Logo da academia">
-        </a>
+        <div class="header-container">
+            <a href="#" class="logo">
+                <img src="./src/images/logo.png" alt="Logo da academia">
+            </a>
 
-        <nav>
-            <ul class="menu">
-                <li><a href="#about">sobre</a></li>
-                <li><a href="#services">serviços</a></li>
-                <li><a href="#prices">preços</a></li>
-                <li><a href="/">equipamentos</a></li>
-                <li><a href="/" class="btn">registre-se</a></li>
-            </ul>
-        </nav>
+            <nav>
+
+                <input type="checkbox" id="menu-hamburguer" />
+
+                <label for="menu-hamburguer">
+                    <div class="menu">
+                        <span class="hamburguer"></span>
+                    </div>
+                </label>
+
+                <ul class="quick-navigation">
+                    <li><a href="#about">sobre</a></li>
+                    <li><a href="#services">serviços</a></li>
+                    <li><a href="#prices">preços</a></li>
+                    <li><a href="/">equipamentos</a></li>
+                    <li><a href="/" class="btn">registre-se</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main class="main">
@@ -199,7 +211,7 @@
                 <input type="text" name="nome" id="nome" placeholder="NOME">
 
                 <input type="tel" name="phone" id="phone" placeholder="TELEFONE">
-                
+
             </div>
 
             <div>
