@@ -13,14 +13,15 @@ body {
 
 /* Header styles */
 
-.header {
+.header .header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 1.5rem 8rem;
+    min-height: 75px;
+    padding: 1.5rem 8rem;
 }
 
-.menu {
+.quick-navigation {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,21 +31,21 @@ body {
     font-family: 'Bebas Neue', sans-serif;
 }
 
-.menu li {
+.quick-navigation li {
     position: relative;
 }
 
-.menu li::before {
+.quick-navigation li::before {
     transform: scaleX(0);
     transform-origin: bottom right;
 }
 
-.menu li:hover::before {
+.quick-navigation li:hover::before {
     transform: scaleX(1);
     transform-origin: bottom left;
 }
 
-.menu li::before {
+.quick-navigation li::before {
     content: " ";
     display: block;
     position: absolute;
@@ -53,26 +54,24 @@ body {
     bottom: 0;
     left: 0;
     inset: 0 0 0 0;
-    background: #000000;
+    background: #222222;
     z-index: -1;
     transition: transform .3s ease
 }
 
-.menu li:last-child::before {
+.quick-navigation li:last-child::before {
     background: transparent;
 }
 
-.menu .btn {
-    background-image: url(../images/rectangle-1.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+.quick-navigation .btn {
+    background: #222222;
     text-align: center;
     padding: 0.8rem 3rem;
+    clip-path: polygon(80% 0%, 100% 40%, 100% 100%, 0 100%, 0 0);
 }
 
-.menu .btn:hover {
-    opacity: 90%;
+.quick-navigation .btn:hover {
+    opacity: 50%;
 }
 
 /* Main styles */
@@ -94,14 +93,16 @@ body {
 .introduction .title {
     font-family: 'Bungee Outline', cursive;
     color: #fff;
-    font-size: 8.2rem;
+    font-size: clamp(5rem,4vw,8.2rem);
     font-weight: 400;
     line-height: 12rem;
 }
 
 .introduction .title span {
+    display: flex;
+    flex-direction: column;
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 12rem;
+    font-size: clamp(8rem,4vw,12rem);
 }
 
 .introduction .text {
@@ -112,10 +113,9 @@ body {
 }
 
 .introduction .start-btn {
-    background-image: url(../images/rectangle-2.svg);
-    width: 187px;
-    display: block;
-    background-repeat: no-repeat;
+    background-color: #222222;
+    clip-path: polygon(80% 0%, 100% 40%, 100% 100%, 0 100%, 0 0);
+    width: 600px;
     font-family: 'Bebas Neue', sans-serif;
     font-size: 3.2rem;
     text-transform: uppercase;
@@ -248,10 +248,10 @@ body {
 .service .btn-service {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 1.6rem;
-    background-image: url(../images/rectangle-2.svg);
-    background-repeat: no-repeat;
+    clip-path: polygon(80% 0%, 100% 40%, 100% 100%, 0 100%, 0 0);
     width: 187px;
     height: 54px;
+    background-color: #222222;
     position: relative;
 }
 
@@ -324,7 +324,6 @@ body {
 
 .plan .plan-time {
     font-family: 'Bebas Neue', sans-serif;
-
     font-size: 4.2rem;
     color: #fff;
     padding: 1rem 2rem;
@@ -405,6 +404,8 @@ body {
 }
 
 .more-about .text .title span {
+    display: flex;
+    flex-direction: column;
     font-size: 8.2rem;
     font-family: 'Bebas Neue', sans-serif;
 }
@@ -468,9 +469,9 @@ body {
 }
 
 .contact-area .form-area input {
-    border: none;
+    border: 1px solid #FFFFFF;
     background-color: transparent;
-    background-image: url(../images/rectangle-20.png);
+    clip-path: polygon(80% 0%, 100% 40%, 100% 100%, 0 100%,);
     width: 234px;
     height: 42px;
     font-family: 'Montserrat', sans-serif;
